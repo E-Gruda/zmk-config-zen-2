@@ -14,21 +14,21 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-                        label = "COLEMAKDHM";
+                        label = "COLE";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L   |  U  |  Y  |  ;  | ESC  |
-// | CTRL |  A  |  R  |  S  |  T  |  G  |   |  H  |  J   |  E  |  I  |  O  |  '   |
-// | SHFT |  Z  |  X  |  C  |  D  |  V  |   |  N  |  M   |  ,  |  .  |  /  | BKSP |
+// | BKSP |  A  |  R  |  S  |  T  |  G  |   |  H  |  J   |  E  |  I  |  O  |  '   |
+// | SHFT |  Z  |  X  |  C  |  D  |  V  |   |  N  |  M   |  ,  |  .  |  /  | LCTRL |
 //                    | GUI | LWR | RET |   | SPACE | RSE  | ALT |
                         bindings = <
    &kp TAB   &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp SEMI &kp ESC
-   &kp LCTRL &kp A &kp R &kp S &kp T &kp G   &kp M &kp N  &kp E     &kp I   &kp O    &kp SQT
-   &kp LSHFT &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &kp BKSP
+   &kp BKSP  &kp A &kp R &kp S &kp T &kp G   &kp M &kp N  &kp E     &kp I   &kp O    &kp SQT
+   &kp LSHFT &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &kp LCTRL
                   &kp LGUI &mo 1 &kp RET   &kp SPACE &mo 2 &kp RALT
                         >;
                 };
                 lower_layer {
-                        label = "SYMBOL";
+                        label = "PROG";
 // -----------------------------------------------------------------------------------------
 // |  `   |  !  |  {  |  &   |  }  |  *  |   |  ^  |  7  |  8  |  9  |  @   |  /  |
 // | CTRL |  %  |  (  | "|"  | )   |  +  |   |  :  |  4  |  5  |  6  |  #   |  \  |
@@ -45,14 +45,14 @@
                 raise_layer {
                         label = "NAV";
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  | CAPS |   |  ^  |  &     |  UP    |  (      |  )  | BKSP |
-// | BTCLR | BT1 | BT2 | BT3 | BT4 | BT5 |   |  -  |  LEFT  |  DOWN  |  RIGHT  |  \  |  `   |
-// | SHFT |     |     |     |     |      |   |  _  |  +  |  {  |  }  |   "|"   |  ~   |
-//                    | GUI |     | SPC  |   | ENT |     | ALT |
+// |  TAB  |  !  |  @  |  #      |  $       | CAPS    |      |  ^  |  RA(LEFT)  |  UP    |  RA(RIGHT)      |  )  | BKSP |
+// | BTCLR | BT1 | BT2 | BT3     | BT4      | BT5     |      |  -  |  LEFT      |  DOWN  |  RIGHT  |  \  |  `   |
+// | SHFT  |     |     | LCMD(C) |  LCMD(V) | LCMD(V) |      |  _  |  LC(C)     |  {  |  }  |   "|"   |  ~   |
+//                     | GUI |               | SPC    |                   | ENT |     | ALT |
                         bindings = <
-   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp CAPS        &kp CARET &mt RALT LEFT  &kp UP &mt RALT RIGHT &kp RPAR &kp BSPC
+   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp CAPS        &kp CARET &kp RA(LEFT)  &kp UP &kp RA(RIGHT) &kp RPAR &kp BSPC
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4           &kp MINUS &kp LEFT &kp DOWN        &kp RIGHT &kp BSLH &kp GRAVE
-   &kp LSHFT &trans   &trans &trans   &trans   &trans           &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
+   &kp LSHFT &trans   &trans &kp LCMD(C)   &kp LCMD(v)   &kp LCMD(v)           &kp UNDER &kp LC(C)  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
                     	     &kp LGUI &trans   &kp SPACE        &kp RET   &trans    &kp RALT
                         >;
                 };
