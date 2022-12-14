@@ -45,14 +45,14 @@
                 raise_layer {
                         label = "NAV";
 // -----------------------------------------------------------------------------------------
-// |  TAB  |  !  |  @  |  #      |  $       | CAPS    |      |  ^  |  RA(LEFT)  |  UP    |  RA(RIGHT)      |  )  | BKSP |
-// | BTCLR | BT1 | BT2 | BT3     | BT4      | BT5     |      |  -  |  LEFT      |  DOWN  |  RIGHT  |  \  |  `   |
-// | SHFT  |     |     | LCMD(C) |  LCMD(V) | LCMD(V) |      |  _  |  LC(C)     |  {  |  }  |   "|"   |  ~   |
+// |  TAB  |  !  |  @  |  #    |  $     | CAPS    |      |  ^  |  RA(LEFT)  |  UP    |  RA(RIGHT)      |  )  | BKSP |
+// | BTCLR | BT1 | BT2 | BT3   | BT4    | BT5     |      |  -  |  LEFT      |  DOWN  |  RIGHT  |  \  |  `   |
+// | SHFT  |     |     | LG(C) |  LG(V) | LG(V)   |      |  _  |  LC(C)     |  {  |  }  |   "|"   |  ~   |
 //                     | GUI |               | SPC    |                   | ENT |     | ALT |
                         bindings = <
    &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp CAPS        &kp CARET &kp RA(LEFT)  &kp UP &kp RA(RIGHT) &kp RPAR &kp BSPC
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4           &kp MINUS &kp LEFT &kp DOWN        &kp RIGHT &kp BSLH &kp GRAVE
-   &kp LSHFT &trans   &trans &kp LCMD(C)   &kp LCMD(v)   &kp LCMD(v)           &kp UNDER &kp LC(C)  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
+   &kp LSHFT &trans   &trans &kp LG(C)   &kp LG(v)   &kp LG(v)           &kp UNDER &kp LC(C)  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
                     	     &kp LGUI &trans   &kp SPACE        &kp RET   &trans    &kp RALT
                         >;
                 };
