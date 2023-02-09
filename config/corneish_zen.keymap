@@ -35,7 +35,7 @@
 // | SHFT |  _  |  [  |  =   |  ]  |  -  |   |  0  |  1  |  2  |  3  |  $   |  ~  |
 //                    | CMD  |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp GRAVE  &kp EXCL  &kp LBRC &kp AMPS  &kp RBRC &kp KP_MULTIPLY     &kp CARET   &kp N7  &kp N8  &kp N9  &kp N0      &kp FSLH
+   &kp GRAVE  &kp EXCL  &kp LBRC &kp AMPS  &kp RBRC &kp KP_MULTIPLY     &kp CARET   &kp N7  &kp N8  &kp N9  &kp AT      &kp FSLH
    &kp LCTRL  &kp PRCNT &kp LPAR &kp PIPE  &kp RPAR &kp PLUS            &kp COLON   &kp N4  &kp N5  &kp N6  &kp HASH    &kp BSLH
    &kp LSHFT  &kp UNDER &kp LBKT &kp EQUAL &kp RBKT &kp MINUS           &kp N0      &kp N1  &kp N2  &kp N3  &kp DLLR    &kp TILDE
                         &kp LCMD     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
@@ -45,14 +45,14 @@
                 raise_layer {
                         label = "NAV";
 // -----------------------------------------------------------------------------------------
-// |  TAB  |  !  |  @  |  #    |  $     | CAPS    |      |  ^  |  RA(LEFT)  |  UP    |  RA(RIGHT)      |  )  | BKSP |
-// | BTCLR | BT1 | BT2 | BT3   | BT4    | BT5     |      |  -  |  LEFT      |  DOWN  |  RIGHT  |  \  |  `   |
-// | SHFT  |     |     | LG(C) |  LG(V) | LG(V)   |      |  _  |  LC(C)     |  {  |  }  |   "|"   |  ~   |
+// | BT_CLR |  BT0  |  F7   |  F8   |  F9   | CAPS    |      |  ^  |  RA(LEFT)  |  UP    |  RA(RIGHT)  |  )  | BKSP |
+// |  BT1   |  BT2  |  F4   |  F5   |  F6   | LG(C]   |      |  -  |  LEFT      |  DOWN  |  RIGHT      |  \  |  `   |
+// |  BT3   |  BT4  |  F1   |  F2   |  F3   | LG(V)   |      |  _  |  LC(C)     |  {     |  }          | "|" |  ~   |
 //                     | GUI |               | SPC    |                   | ENT |     | ALT |
                         bindings = <
-   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp CAPS        &kp CARET &kp RA(LEFT)  &kp UP &kp RA(RIGHT) &kp RPAR &kp BSPC
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4           &kp MINUS &kp LEFT &kp DOWN        &kp RIGHT &kp BSLH &kp GRAVE
-   &kp LSHFT &trans   &trans &kp LG(C)   &kp LG(V)   &kp LG(V)           &kp UNDER &kp LC(C)  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
+   &bt BT_CLR   &bt BT_SEL 0 &kp F7 &kp F8 &kp F9 &kp CAPS            &kp CARET &kp RA(LEFT)  &kp UP    &kp RA(RIGHT) &kp RPAR &kp BSPC
+   &bt BT_SEL 1 &bt BT_SEL 2 &kp F4 &kp F5 &kp F6 &kp LG(C)           &kp MINUS &kp LEFT      &kp DOWN  &kp RIGHT     &kp BSLH &kp GRAVE
+   &bt BT_SEL 3 &bt BT_SEL 4 &kp F1 &kp F2 &kp F3 &kp LG(V)           &kp UNDER &kp LC(C)     &kp LBRC  &kp RBRC      &kp PIPE &kp TILDE
                     	     &kp LGUI &trans   &kp SPACE        &kp RET   &trans    &kp RALT
                         >;
                 };
