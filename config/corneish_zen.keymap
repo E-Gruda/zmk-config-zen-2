@@ -45,12 +45,12 @@
                 raise_layer {
                         label = "NAV";
 // -----------------------------------------------------------------------------------------
-// |  ESC   |  BT0  |  F7   |  F8   |  F9   | CAPS    |      |  ^  |  RA(LEFT)  |  UP    |  RA(RIGHT)  |  )  | BKSP |
+// |  ESC   | BTCLR |  F7   |  F8   |  F9   | CAPS    |      |  ^  |  RA(LEFT)  |  UP    |  RA(RIGHT)  |  )  | BKSP |
 // |  BT1   |  BT2  |  F4   |  F5   |  F6   | LG(C]   |      |  -  |  LEFT      |  DOWN  |  RIGHT      |  \  |  `   |
 // |  BT3   |  BT4  |  F1   |  F2   |  F3   | LG(V)   |      |  _  |  LC(C)     |  {     |  }          | "|" |  ~   |
 //                     | GUI |               | SPC    |                   | ENT |     | ALT |
                         bindings = <
-   &kp ESC      &bt BT_SEL 0 &kp F7 &kp F8 &kp F9 &kp CAPS            &kp CARET &kp RA(LEFT)  &kp UP    &kp RA(RIGHT) &kp RPAR &kp BSPC
+   &kp ESC      &bt BT_CLR   &kp F7 &kp F8 &kp F9 &kp CAPS            &kp CARET &kp RA(LEFT)  &kp UP    &kp RA(RIGHT) &kp RPAR &kp BSPC
    &bt BT_SEL 1 &bt BT_SEL 2 &kp F4 &kp F5 &kp F6 &kp LG(C)           &kp MINUS &kp LEFT      &kp DOWN  &kp RIGHT     &kp BSLH &kp GRAVE
    &bt BT_SEL 3 &bt BT_SEL 4 &kp F1 &kp F2 &kp F3 &kp LG(V)           &kp UNDER &kp LC(C)     &kp LBRC  &kp RBRC      &kp PIPE &kp TILDE
                     	     &kp LGUI &trans   &kp SPACE        &kp RET   &trans    &kp RALT
