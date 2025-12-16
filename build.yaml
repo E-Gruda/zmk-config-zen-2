@@ -1,5 +1,5 @@
 include:
-  - board: corneish_zen_v2_left
+  - board: corneish_zen_left
     # snippet: zmk-usb-logging  # uncomment to enable logging
   - board: corneish_zen_right
   - board: corneish_zen_left
